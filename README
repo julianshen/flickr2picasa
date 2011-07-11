@@ -1,0 +1,17 @@
+This is a simple tool to migrate Flickr photo set to Picasa
+
+Pre-requirement:
+Modules - 
+Beej's Python Flickr API (http://stuvel.eu/flickrapi)
+Google GDATA/Picasa (http://code.google.com/apis/picasaweb/code.html)
+Python Image Library (http://www.pythonware.com/products/pil/)
+
+Others - 
+FLickr API key (http://www.flickr.com/services/api/)
+Gmail account
+
+Usage:
+use "python flickr_listsets.py" to find out all you photosets and their IDs
+use "python flickr2picasa.py photoset_ID" to move photos to Picasa
+
+This script will download original photos from Flickr and resize to no large than 2048x2048 before uploading to Picasa (that's the new limit to Picasa free quota)
